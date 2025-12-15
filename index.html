@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leon Kennedy | UX / Product Designer</title>
+  <meta name="description" content="UX & Product Designer portfolio showcasing user-centred design, research, and interaction design projects." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: #1f2933;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* Sections */
+    section { margin-bottom: 5rem; }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    /* Project cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: transform 0.2s ease, border 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      background: #020617;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    /* About */
+    .about p {
+      max-width: 800px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    footer p { color: var(--muted); font-size: 0.9rem; }
+
+    @media (min-width: 768px) {
+      header h1 { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>Leon Kennedy</h1>
+      <p>
+        UX / Product Designer with a background in interaction design, game design, and user research.
+        I design user-centred digital products that balance usability, business goals, and technical constraints.
+      </p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      </nav>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+
+        <div class="card">
+          <h3>AliExpress UX Redesign</h3>
+          <p>
+            End-to-end UX case study improving product discovery and trust through clearer hierarchy,
+            simplified navigation, and usability testing.
+          </p>
+          <div class="tags">
+            <span class="tag">UX Research</span>
+            <span class="tag">UI Design</span>
+            <span class="tag">Usability Testing</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>MyFitnessPal Gamification</h3>
+          <p>
+            Gamified feature concepts designed to increase user engagement and retention
+            using behavioural design principles.
+          </p>
+          <div class="tags">
+            <span class="tag">Product Design</span>
+            <span class="tag">Gamification</span>
+            <span class="tag">Interaction Design</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Student Accommodation Platform</h3>
+          <p>
+            UX project focused on helping university students find accommodation more efficiently
+            through user research and iterative prototyping.
+          </p>
+          <div class="tags">
+            <span class="tag">User Research</span>
+            <span class="tag">Wireframing</span>
+            <span class="tag">Prototyping</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a design graduate with experience across UX, UI, and product design, working in
+        multidisciplinary teams involving developers, artists, and stakeholders. My background in
+        game design strengthens my understanding of interaction, feedback loops, and user motivation.
+        I am seeking UX Designer, Product Designer, or Graduate Design roles in the UK.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>Portfolio PDFs and full case studies available on request.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Leon Kennedy</p>
+      <p>Designed & built with accessibility and performance in mind.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
